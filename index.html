@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+<meta charset="UTF-8">
+<html>
+<link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
+<!--Smooth Scroll :D-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+</script>
+
+<head>
+  <title>Belo Canto Chalés</title>
+<<<<<<< HEAD
+
+
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> 755dc78333ab4a0f7403a5ab554623931695e6cd
+</head>
+<!--Logo e banner-->
+
+<body>
+  <div>
+    <img class="banner" src="imagens/Boa.jpg">
+    <div class="TopMenu">
+      <img src="imagens/BELO CANTO - LOGO 2.png">
+
+    </div>
+    <a href="#links">
+      <div class="scroll-down"></div>
+    </a>
+  </div>
+
+  <div class="links" id="links">
+    <img id="minilogo" src="imagens/BELO CANTO - LOGO 2.png">
+    <a href="index.html">Acomodações</a>
+    <a href="info.html">Informações</a>
+    <a href="comochegar.html">Como Chegar</a>
+    <a id="reservarmenu" href="https://www.booking.com/hotel/br/chales-santa-teresa.pt-br.html">Reservar</a>
+  </div>
+  <!--Menu e links-->
+  <div id="sec2info">
+
+    <!--SlideShow-->
+    <div class="slideshow">
+      <div>
+        <p id="acomodacoes">Dê uma olhada em nossas acomodações:</p>
+      </div>
+      <div class="myslide1">
+        <img src="imagens/chave-1.jpg" style="width: 100%; border-radius: 50px;">
+      </div>
+      <div class="myslide1">
+        <img src="imagens/cesta.jpg" style="width: 100%; border-radius: 50px;">
+      </div>
+      <div class="myslide1">
+        <img src="imagens/bolo.jpg" style="width: 100%; border-radius: 50px;">
+      </div>
+      <div class="myslide1">
+        <img src="imagens/chave-2.jpg" style="width: 100%; border-radius: 50px;">
+      </div>
+      <div class="myslide1">
+        <img src="imagens/cama.jpg" style="width: 100%; border-radius: 50px;">
+      </div>
+      <div class="myslide1">
+        <img src="imagens/flores.jpg" style="width: 100%; border-radius: 50px;">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <p id="rent">🍃 Aluguel para temporada e fins de semana!</p>
+
+
+    </div>
+
+
+
+
+    <div>
+
+    </div>
+
+  </div>
+
+  <div id="sec3">
+    <div>
+      <img class="social" src="imagens/insta.jpg">
+      <p class="socialw"><a id="belocanto"
+          href="https://www.instagram.com/belocantochales/"><strong>@belocantochales</strong></a></p>
+      <img class="social" id="whats" src="imagens/whats.png">
+      <p class="socialw" id="number"><strong>(27) 99864-8010</strong></p>
+    </div>
+  </div>
+</body>
+
+</html>
