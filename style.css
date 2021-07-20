@@ -7,14 +7,16 @@ html {
 .banner {
   height: 100%;
   width: 100%;
+  position: relative;
+  margin-bottom: 880px;
 }
 
 .TopMenu img {
   height: 850px;
   width: 850px;
-  bottom: 800px;
+  bottom: 850px;
   position: relative;
-  left: 9%;
+  left: 150px;
 }
 
 .TopMenu {
@@ -66,53 +68,52 @@ html {
 .links {
   background-color: rgb(255, 255, 255);
   position: relative;
-  bottom: 1000px;
+  bottom: 950px;
   height: 110px;
 }
 
-.scroll-down {
-  height: 50px;
-  width: 30px;
-  border: 2px solid white;
-  position: relative;
-  bottom: 1250px;
-  left: 50%;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-.scroll-down::before, .scroll-down::after {
-  content: '';
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  border: 2px solid white;
-  height: 10px;
-  width: 10px;
-  transform: translate(-50%, -50%) rotate(45deg);
-  border-top: transparent;
-  border-left: transparent;
-  animation: scroll-down 1s ease-in-out infinite;
-}
-
-.scroll-down::after {
-  animation-delay: .3s;
-  top: 30%;
-}
-
-@keyframes scroll-down {
-  0% {
-    opacity: 0;
+@media only screen and (min-width:1000px) {
+  .scroll-down {
+    height: 50px;
+    width: 30px;
+    border: 2px solid white;
+    position: relative;
+    bottom: 1150px;
+    left: 52%;
+    border-radius: 50px;
+    cursor: pointer;
   }
-  30% {
-    opacity: 1;
+  .scroll-down::before, .scroll-down::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid white;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
   }
-  60% {
-    opacity: 1;
+  .scroll-down::after {
+    animation-delay: .3s;
+    top: 30%;
   }
-  100% {
-    opacity: 0;
-    top: 90%
+  @keyframes scroll-down {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      top: 90%
+    }
   }
 }
 
@@ -313,7 +314,7 @@ html {
   height: 20%;
   width: 20%;
   bottom: 5px;
-  margin: 0px 10px 10px;
+  margin: 0px 10px 10px 100px;
   border-radius: 45px 45px 0px 45px;
 }
 
@@ -326,8 +327,8 @@ html {
 
 #info {
   position: relative;
-  left: 550px;
-  bottom: 420px;
+  left: 470px;
+  bottom: 370px;
   height: 20px;
   width: 20px;
 }
@@ -335,8 +336,8 @@ html {
 #infotxt {
   position: relative;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  top: 112px;
-  left: 578px;
+  text-align: center;
+  top: 100px;
 }
 
 .inst {
