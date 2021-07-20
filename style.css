@@ -326,14 +326,6 @@ html {
   font-size: 20px;
 }
 
-#info {
-  position: relative;
-  left: 470px;
-  bottom: 370px;
-  height: 20px;
-  width: 20px;
-}
-
 #infotxt {
   position: relative;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
